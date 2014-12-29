@@ -1,3 +1,6 @@
+import java.util.Scanner;
+
+
 class hanoitowers {
 
 public static Integer hanoimoves (Integer Num) {
@@ -10,8 +13,13 @@ public static Integer hanoimoves (Integer Num) {
 }
 
 public static void main (String [] args) {
-	Integer mynum = hanoimoves(6);
-	System.out.println("The number of moves is " + mynum);
+	System.out.println("This app calculates how many moves it will take to solve the problem with N discs");
+	System.out.println("Enter the number of dicscs: ");
+	Scanner sc = new Scanner(System.in);
+	     int i = sc.nextInt();
+
+	Integer mynum = hanoimoves(i);
+	System.out.println("The number of moves is: " + mynum);
 }
 
 
