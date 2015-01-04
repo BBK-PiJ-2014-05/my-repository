@@ -40,6 +40,28 @@ private IntegerTreeNode right;
 		}
 	}
 
+@Override
+
+	public String toString() {
+		if (this.left == null && this.right == null) {
+			return "["+this.value+"L[] R[]]  ";
+		}
+		else if (this.left == null) {
+			System.out.print("["+this.value+"L[] R["+this.right.value+"]]  ");
+			return right.toString();
+		} else if (this.right == null) {
+			System.out.print("["+this.value+"L["+this.left.value+"] R[]]  ");
+			return left.toString();
+		} else {
+			System.out.print("["+this.value+"L["+this.left.value+"] R["+this.right.value+"]]  ");
+			left.toString();
+			return right.toString();
+		}
+
+
+	}
+
+
 
 
 	public void add(int newNumber) {

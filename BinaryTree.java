@@ -13,5 +13,6 @@ public class BinaryTree {
 		System.out.println("Is 22 in the tree? " + startNode.contains(22));
 		System.out.println("Max value is: " + startNode.getMax());
 		System.out.println("Min value is: " + startNode.getMin());
+		startNode.toString();
 	}
 }
