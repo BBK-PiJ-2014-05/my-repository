@@ -10,24 +10,23 @@ public class MobilePhone extends OldPhone {
 		System.out.println("Starting game " + game);
 	}
 
-	//@Override
+	@Override
 	public void call(String number) {
-
 		super.call(number);
-		System.out.println("Works");
 		callHistory.push(number);
 	}
 
 	public void printLastNumbers() {
-		int max;
-		if (callHistory.getSize() < 10) {
-			max = callHistory.getSize();
-		} else {
+		int max =0;
+		int headIndex = callHistory.getSize() -1;
+		if (callHistory.getSize() > 10) {
 			max = 10;
+		} else {
+			max = callHistory.getSize();
 		}
 			System.out.println("Call History: ");
-			for (int i = 10; i > 0; i--) {
-				System.out.println(" " + callHistory.getElement(i));
+			for (int i = 0; i < max; i++) {
+				System.out.println(" " + callHistory.getElement(headIndex-i));
 			}
 
 

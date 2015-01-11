@@ -5,7 +5,7 @@ public static void main(String[] args) {
 Phone myphone = new OldPhone();
 myphone.call("858 344 2568");
 MobilePhone mobile = new MobilePhone();
-mobile.call("347 456 5453");
+mobile.call("00 456 5453");
 mobile.call("347 456 5454");
 mobile.call("347 456 5455");
 mobile.call("347 456 5456");
