@@ -6,7 +6,7 @@ public class PhoneLauncher {
 	}
 
 	public void launch() {
-	SmartPhone smart1 = new SmartPhone();
+	SmartPhone smart1 = new SmartPhone("Apple");
 	smart1.findPosition();
 	smart1.browseWeb("Google.com");
 	smart1.playGame("Tetris");
@@ -24,6 +24,7 @@ public class PhoneLauncher {
 	smart1.call("323 456 5614");
 	smart1.call("001 456 5615");
 	smart1.printLastNumbers();
+	System.out.println("smartphone brand: " + smart1.getBrand());
 	}
 
 

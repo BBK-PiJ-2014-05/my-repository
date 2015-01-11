@@ -2,6 +2,10 @@ public class MobilePhone extends OldPhone {
 
 	private ArrayStringStack callHistory = new ArrayStringStack();
 
+	public MobilePhone(String brand) {
+		super(brand);
+	}
+
 	public void ringAlarm(String sound) {
 		System.out.println("Ringing alarm sound " + sound);
 	}
